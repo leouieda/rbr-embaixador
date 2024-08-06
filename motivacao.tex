@@ -1,0 +1,153 @@
+% Template for a letter on IAG-USP letterhead
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set a class and general configuration
+\documentclass[a4paper,onecolumn,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set variables with the title, authors, etc.
+\newcommand{\Titulo}{Carta}
+\newcommand{\Nome}{Leonardo Uieda}
+\newcommand{\Cargo}{Professor Doutor}
+\newcommand{\Email}{uieda@usp.br}
+\newcommand{\Telefone}{+55 11 30914787}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Import the required packages
+\usepackage[utf8]{inputenc}
+\usepackage[TU]{fontenc}
+\usepackage[brazil]{babel}
+%\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+% improved urls with proper hyphenation
+\usepackage{xurl}
+% Use a different font
+\usepackage[default,scale=0.95]{opensans}
+% Icons and fonts (requires using xelatex or luatex)
+\usepackage{fontawesome5}
+\usepackage{academicons}
+% Control the font size
+\usepackage{anyfontsize}
+\usepackage{setspace}
+% Generate random text
+\usepackage{lipsum}
+% Better left and right align
+\usepackage{ragged2e}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuration of the document
+
+\geometry{%
+  left=25mm,
+  right=15mm,
+  top=15mm,
+  bottom=15mm,
+  headsep=15mm,
+  headheight=15mm,
+  footskip=7mm,
+  includehead=true,
+  includefoot=true
+}
+
+% Control line spacing
+\onehalfspacing
+\newcommand{\Padding}{\vspace{0.5cm}}
+
+% Custom colors
+\definecolor{darkgray}{gray}{0.4}
+\definecolor{mediumgray}{gray}{0.5}
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{mediumblue}{HTML}{2060c2}
+\definecolor{lightblue}{HTML}{f7faff}
+
+% Make urls use the same font as every other text
+\urlstyle{same}
+
+% Configure hyperref and add PDF metadata
+\hypersetup{
+    colorlinks,
+    allcolors=mediumblue,
+    pdftitle={\Titulo},
+    pdfauthor={\Nome},
+    breaklinks=true,
+}
+
+% Configure header and footer
+\newcommand{\HeaderFont}{\footnotesize\color{mediumgray}}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{%
+  \includegraphics[height=1.5cm]{images/usp.png}
+}
+\lhead{%
+  \includegraphics[height=1.5cm]{images/iag.png}
+}
+\cfoot{%
+  \HeaderFont{}
+  \Centering
+  \onehalfspacing
+  Rua do Matão, 1226 - São Paulo, SP, Brasil, 05508-090
+  \newline
+  Tel: \Telefone{};
+  E-mail: \href{mailto:\Email}{\Email};
+  Website: \href{https://www.iag.usp.br}{www.iag.usp.br}
+}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+\preto{\footrule}{\color{lightgray}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{flushleft}
+  Programa de Embaixadores 2024-2025
+  \\
+  Rede Brasileira de Reprodutibilidade
+\end{flushleft}
+\begin{flushright}
+  \today
+\end{flushright}
+\Padding
+
+\noindent
+Re: Carta de Motivação
+\Padding
+
+Porque se interessou pelo tema e
+envolvimento prévio com atividades relacionadas a ele
+
+Comecei com open source na graduação.
+Programas livre para ajudar a comunidade GOCE.
+Mestrado descobri ciência aberta.
+Embaixador do figshare.
+Reprodutibilidade e FAIR desde de 2012.
+Cursos de programação e open source/open science na AGU
+Advisory council do EarthArXiv e pyopensci.
+Recursos educacionais abertos.
+Palestra de open science no SPIN.
+\Padding
+
+\begin{flushleft}
+  Atenciosamente,
+
+  \Padding
+  \Nome{}
+  \\[0.25cm]
+  {
+    \color{mediumgray}
+    \small
+    \Cargo
+    \\
+    Departamento de Geofísica
+    \\
+    Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+    \\
+    Universidade de São Paulo
+  }
+\end{flushleft}
+\end{document}
