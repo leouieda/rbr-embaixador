@@ -8,6 +8,8 @@ Documentos produzidos aqui:
 - Carta de motivação: `motivacao.tex`
 - Plano de atividades: `plano.tex`
 
+PDFs podem ser baixados aqui: https://github.com/leouieda/rbr-embaixador/releases/tag/submitted
+
 ## Gerando os PDFs
 
 Baixe uma cópia deste repositório utilizando o programa `git`:
