@@ -3,11 +3,37 @@
 Material de inscrição no [programa de embaixadores da Rede Brasileira de
 Reprodutibilidade](https://www.reprodutibilidade.org/programa-de-embaixadores).
 
-Documentos necessários:
+Documentos produzidos aqui:
 
-- [ ] Carta de motivação (até 2 páginas): porque se interessou pelo tema e envolvimento prévio com atividades relacionadas a ele
-- [ ] Plano de atividades (1 página): descrição de uma ou mais propostas de atividades que poderiam ser desenvolvidas como embaixador e em que instituições/áreas de pesquisa poderiam ser desenvolvidas.
-- [ ] Carta de apoio (opcional): carta de um colega ou supervisor indicando apoio ao candidato e suas propostas.
+- Carta de motivação: `motivacao.tex`
+- Plano de atividades: `plano.tex`
+
+## Gerando os PDFs
+
+Baixe uma cópia deste repositório utilizando o programa `git`:
+
+```bash
+git clone git@github.com:leouieda/rbr-embaixador.git
+cd rbr-embaixador
+```
+
+Os dois documentos foram escritos utilizando o LaTeX. Ambos podem ser
+compilados com qualquer distribuição do LaTeX, porém recomendo utilizar o
+[Tectonic](https://tectonic-typesetting.github.io/en-US/).
+Caso utilize o gerenciador de pacotes `conda` ou `mamba` (comum para quem
+trabalha com a linguagem Python), o Tectonic e o programa `make` podem ser
+instalado com um comando no terminal a partir do arquivo `environment.yml`:
+
+```bash
+conda env create -f environment.yml
+```
+
+Os documentos PDF podem ser gerados a partir dos códigos fonte utilizando os
+comandos definidos no `Makefile` rodando:
+
+```bash
+make
+```
 
 ## Licença/License
 
