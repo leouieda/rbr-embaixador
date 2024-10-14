@@ -10,6 +10,8 @@ Documentos produzidos aqui:
 
 PDFs podem ser baixados aqui: https://github.com/leouieda/rbr-embaixador/releases/tag/submitted
 
+> **Update 2024-10-14:** Fui [selectionado para o programa](https://www.reprodutibilidade.org/programa-de-embaixadores)! 
+
 ## Gerando os PDFs
 
 Baixe uma cópia deste repositório utilizando o programa `git`:
