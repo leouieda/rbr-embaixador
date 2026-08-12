@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repository has moved to Codeberg and will no longer be updated: https://codeberg.org/leouieda/rbr-embaixador
+
 # Embaixadores da Rede Brasileira de Reprodutibilidade
 
 Material de inscrição no [programa de embaixadores da Rede Brasileira de
